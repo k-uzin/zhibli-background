@@ -1,0 +1,444 @@
+html {
+  cursor: url("../img/mouseCursor01.PNG") 20 20, auto;
+  overflow: hidden;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hidden{
+  display: none;
+}
+#totoro{
+  z-index: 1;
+  opacity: 1;
+  width: 15%;
+  height: 15%;
+  bottom: 20px;
+  right: 10px;
+  filter: drop-shadow(0px 0px 2px rgba(255,255,255,1));
+}
+#welcome div{
+    /* z-index: 1; */
+    position: relative;
+    top:-40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+#welcome span{
+  font-weight: 600;
+  color: #fff;
+  /* line-height: 100px; */
+  filter: drop-shadow(2px 2px 3px rgb(0, 0, 0));
+  /* text-shadow: -1px 0px #000, 1px 0px #000, 0px -1px #000, 0px 1px 4px #000; */
+  font-family: 'Gaegu', cursive;
+}
+#welcome span:first-child{
+  font-size: 50px;
+}
+#welcome span:last-child{
+  font-size: 140px;
+  line-height: 90px;
+
+}
+#welcome img{
+  position: absolute;
+  top: -45px;
+  /* top: 10px; */
+  left: 210px;
+  /* left: 0; */
+  width: 220px;
+  height: 120px;
+  opacity: 1;
+  z-index: 1;
+  filter: drop-shadow(0px 5px 10px rgba(255, 255, 255, 0.8));
+}
+form{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* .material-icons{
+  position: absolute;
+  padding-top: 3px;
+  color: rgb(175, 175, 175);
+} */
+form div{
+  /* border-bottom: 1px solid #000; */
+  margin-bottom: 20px;
+}
+form input{
+  width: 260px;
+  height: 38px;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px;
+  font-family: 'Gaegu', cursive;
+  /* background-color:rgba(255,255,255,0.7); */
+  box-shadow: inset -1px -1px 5px rgba(113, 113, 113, 0.8),inset 1px 1px 3px rgba(113, 113, 113, 0.8);
+}
+form input::placeholder{
+  font-family: 'Gaegu', cursive;
+  font-size: 18px;
+  /* font-weight: 900; */
+  letter-spacing: 1px;
+  color: rgb(79, 79, 79);
+}
+form input:focus{
+  outline: none;
+}
+form input:focus::placeholder{
+  opacity: 0;
+}
+form button{
+  position: relative;
+  top: 5px;
+  width: 120px;
+  height: 45px;
+  /* margin: 0 auto; */
+  border-radius: 100px;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgba(0,0,0,0.1);
+  font-size: 24px;
+  font-weight: bold;
+  /* letter-spacing: 2px; */
+  color: rgb(255, 255, 255);
+  cursor: url("../img/mouseCursor01.PNG") 20 20, auto;
+  font-family: 'Gaegu', cursive;
+  /* text-shadow: -1px 0px #000, 1px 0px #000, 0px -1px #000, 0px 1px #000; */
+  /* box-shadow: inset 0px 0px 4px rgb(255, 255, 255),0px 0px 4px rgb(249, 255, 189); */
+  /* text-shadow: 0px 0px 10px rgb(249, 255, 206); */
+  
+  text-shadow: 1px 1px 1px #000;
+  box-shadow: 3px 3px 4px rgba(62, 61, 61, 0.5);
+  /* transition: box-shadow 2s; */
+}
+form button:hover{
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  box-shadow: inset 1px 1px 8px rgb(255, 255, 255), 1px 1px 8px rgb(255, 255, 255);
+}
+form button:active{
+  /* background-color: #fff; */
+  /* color: #000; */
+  font-size: 22px;
+  box-shadow: 1px 1px 0px #000;
+}
+h1{
+  position: absolute;
+  top: 0px; /*부모요소(body)로부터*/
+  font-size: 23px;
+  font-weight: 500;
+  font-family: 'Gaegu', cursive;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+h2{
+  position: absolute;
+  top: 25%;
+  font-size: 100px;
+  font-weight: 500;
+  letter-spacing: 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 10px rgb(76, 76, 76);
+}
+h3{
+  position: relative;
+  top: 7%;  /*원래위치(정가운데)로부터*/
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: white;
+  /* opacity: 0.9; */
+  text-shadow: 1px 1px 4px rgb(0, 0, 0)
+}
+h4{
+  position: absolute;
+  bottom: 0;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+h4 #quote{
+  margin-bottom: 4px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style:italic;
+  text-shadow: -1px 0px #000, 1px 0px #000, 0px -1px #000, 0px 1px #000;
+  transition: 0.4s;
+}
+h4 #quote:hover{
+  font-size: 21px;
+}
+h4 #movie{
+  font-size: 15px;
+  font-weight: 100;
+  text-shadow: -1px 0px #000, 1px 0px #000, 0px -1px #000, 0px 1px 1px #000;
+}
+img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  opacity: 0.8;
+  z-index: -2;
+}
+/* #black_bg{
+  position: absolute;
+  background-color: rgb(56, 56, 56);
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  opacity: 0.1;
+  z-index: -1;
+} */
+#todo-form{
+  position: absolute;
+  top: 30px;
+  left: -10px;
+}
+#todo-form input{
+  background-color: transparent;
+  padding-top: 20px;
+  /* border-bottom: 1px solid #000; */
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Gaegu', cursive;
+  box-shadow: none;
+}
+#todo-form input::placeholder{
+  color: #000;
+  font-size: 23px;
+  font-weight: 700;
+  text-shadow: 1px 0px 0px rgba(2565, 255, 255, 1), -1px 0px 0px rgba(255, 255, 255, 1), 0px 1px 0px #fff, 0px -1px 0px #fff;
+}
+#todo-list, #todo-finish{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 70px;
+  left: 20px;
+  width: 225px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 0;
+  padding-top: 14px;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: 'Gaegu', cursive;
+  letter-spacing: 1px;
+  /* font-family: 'Courier New', Courier, monospace; */
+  text-align: center;
+  overflow: scroll;
+}
+#todo-list::-webkit-scrollbar, #todo-finish::-webkit-scrollbar{
+  display: none;
+}
+#todo-list li, #todo-finish li{
+  display: flex;
+  margin-top: 7px;
+  margin-left: 13px;
+}
+#todo-list li:first-child, #todo-finish li:first-child{
+  margin-top: 6px;
+}
+#todo-list span, #todo-finish span{
+  display: flex;
+  width: 140px;
+  font-size: 23px;
+  font-weight: 500;
+  font-family: 'Gaegu', cursive;
+  color: #000;
+  justify-content: center; 
+  margin-right: 5px; 
+}
+#todo-list button, #todo-finish button{
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: transparent;
+  padding-left: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+  z-index: 2;
+}
+#todo-list button:first-child{
+  font-size: 22px;
+}
+#todo-finish button:first-child{
+  font-size: 18px;
+}
+#todo-list button:last-child:hover, #todo-finish button:last-child:hover{
+  font-size: 20px;
+}
+
+#todo-finish{
+  top: 350px;
+}
+#memo{
+  position: absolute;
+  top: 50px;
+  right: 44px;
+}
+#memo span{
+  width: 200px;
+  letter-spacing: 1px;
+  font-size: 23px;
+  font-weight: 700;
+  text-shadow: 1px 0px 0px rgba(255, 255, 255, 1), -1px 0px 0px rgba(255, 255, 255, 1), 0px 1px 0px #fff, 0px -1px 0px #fff;
+  font-family: 'Gaegu', cursive;
+  right: -15px;
+  position: relative;
+  cursor: pointer;
+}
+#memo-list{
+  list-style: none;
+  position: absolute;
+  top: 30px;
+  padding: 0;
+  overflow: scroll;
+  height: 555px;
+}
+#memo-list::-webkit-scrollbar{
+  display: none;
+}
+#memo-list li{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+  width: 200px;
+  /* background-image:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.2)), url(../img/memo4.jpg); */
+  /* background-size: 100%; */
+  background-size: cover;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  /* border: 3px solid #fff; */
+  border-radius: 2px;
+}
+#memo-list li #delete{
+  width: 20px;
+  z-index: 2;
+  position: relative;
+  top: 6px;
+  right: -170px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+}
+#memo-list li #delete:hover{
+  /* text-shadow: 2px 0px 0px rgba(255, 255, 255, 1), -2px 0px 0px rgba(255, 255, 255, 1), 0px 2px 0px #fff, 0px -2px 0px #fff; */
+  cursor: pointer;
+}
+#memo-list li #submit{
+  position: relative;
+  right: -150px;
+  bottom: 8px;
+  width: 50px;
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+  font-family: 'Gaegu', cursive;
+  margin-top: 3px;
+  cursor: pointer;
+}
+#memo-list li textarea{
+  height: 100px;
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+  resize: none;
+  padding-left: 10px;
+  margin-top: 2px;
+  margin-bottom: 7px;
+  font-family: 'Gaegu', cursive;
+  font-size: 22px;
+  overflow: scroll;
+  height: 100px;
+}
+#memo-list li textarea::-webkit-scrollbar{
+  display: none;
+}
+#memo-list li textarea:focus{
+  outline: none;
+}
+#memo-list li textarea::placeholder{
+  font-family: 'Gaegu', cursive;
+  padding-left: 5px;
+  color: rgb(60, 60, 60);
+  font-size: 18px;
+}
+#memo-list li img{
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  height: 80%;
+}
+#cat{
+  z-index: 1;
+  opacity: 1;
+  width: 8%;
+  height: 16%;
+  bottom: 28px;
+  left: 205px;
+}
+/* audio{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 200px;
+  height: 30px;
+  background-color: transparent;
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+} */
+#music-player{
+  position: absolute;
+  display: flex;
+  top: 10px;
+  right: 28px;
+  border-radius: 20px;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  background-color: rgba(255,255,255,0.3);
+}
+#music-player div{
+  position: relative;
+  top: 1px;
+  right: 26px;
+  font-size: 20px;
+}
+#music-player span{
+  position: relative;
+  top: 6px;
+  right: 20px;
+  font-family: 'Gaegu', cursive;
+  font-size: 18px;
+}
+#play{
+  background-color: transparent;
+  font-size: 22px;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: 3px;
+  cursor: pointer;
+}
+#pause{
+  background-color: transparent;
+  font-size: 22px;
+  border: none;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  cursor:pointer
+}
